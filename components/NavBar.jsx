@@ -1,27 +1,36 @@
-import { Logo, navLinks } from '@/constant'
-import Image from 'next/image'
-import Link from 'next/link'
+'use client'
+
 import React from 'react'
+import LogoiIcon from './LogoiIcon'
+import Btn from './Btn'
+import ThemeSwitcher from './theme/ThemeSwitcher'
+import NavLinks from './NavLinks'
+import { hero } from '@/constant'
 
 const NavBar = () => {
+	const handelClick = () => {
+		console.log('hello')
+	}
 	return (
-		<header className='flex items-center justify-between p-6 fixed top-0 left-0 right-0 container'>
+		<header className='flex items-center justify-between py-6 fixed top-0 left-0 right-0 container z-50'>
 			{/* ------------------------------- Logo ------------------------------ */}
-			<Link href='/'>
-				<h1 className='text-foreground font-poppins font-black text-2xl'>Travell <span className='text-primary font-poppins font-black text-2xl'>O</span></h1>
-			</Link>
+			<LogoiIcon />
 			{/* ------------------------------- Nav ------------------------------- */}
-			<nav>
-				<ul className='flex gap-6'>
-					{navLinks.map(({ href, name }) => (
-						<li key={name}>
-							<Link href={href}>{name}</Link>
-						</li>
-					))}
-				</ul>
-			</nav>
+
+			<NavLinks />
 			{/* ------------------------------- Btn ------------------------------- */}
-			<div className=''>BTN</div>
+			<div className='flex gap-6'>
+				<ThemeSwitcher />
+
+				<Btn
+					name='Sign up'
+					colors='primary'
+					icon={null}
+					variants='bordered'
+					size='md'
+					handelClick={handelClick}
+				/>
+			</div>
 		</header>
 	)
 }

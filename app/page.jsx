@@ -1,13 +1,12 @@
-import Btn from '@/components/Btn'
-import ThemeSwitcher from '@/components/ThemeSwitcher'
-import { Button } from '@nextui-org/button'
+import HeroSection from '@/components/HeroSection'
+import React from 'react'
 
-export default function Home() {
+const Homepage = () => {
 	return (
-		<section className='section flex-col gap-20'>
-			<h1 className='text-9xl text-center font-poppins '>Home Page</h1>
-			<Btn name='btn'/>
-			<ThemeSwitcher/>
-		</section>
+		<main className=''>
+			<HeroSection />
+		</main>
 	)
 }
+
+export default Homepage

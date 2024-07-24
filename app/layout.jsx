@@ -27,11 +27,9 @@ export default function RootLayout({ children }) {
 		<html lang='en'>
 			<body className={`${poppins.variable} ${volkhov.variable}`}>
 				<Providers>
-					<main>
 						<NavBar />
 						{children}
 						<Footer />
-					</main>
 				</Providers>
 			</body>
 		</html>

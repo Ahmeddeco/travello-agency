@@ -10,40 +10,34 @@ module.exports = {
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
-    container: {
-      center: true,
-    },
-    screens: {
-      tab: '960px',
-      desk: '1280px',
-    },
-    // colors: {
-    //   orangy: "#DF6951",
-    //   yellowy: "#f2994a",
-    //   blueblack: "#181E4B",
-    //   default: '#5E6282',
+    extend: {
+      container: {
+        center: true,
+      },
+      screens: {
+        mob: '420px',
+        tab: '960px',
+        desk: '1280px',
+      },
+      fontFamily: {
+        poppins: "var(--font-poppins)",
+        volkhov: "var(--font-volkhov)",
+      },
+      boxShadow: {
+        sm: '0px 2px 4px 0px rgba(11,10, 55, 0.15)',
+        lg: '0px 8px 20px 0px rgba(18, 16, 99, 0.06)',
 
-    // },
-    fontFamily: {
-      poppins: "var(--font-poppins)",
-      volkhov: "var(--font-volkhov)",
+      },
     },
     fontSize: {
-      xs: ['14px', { lineHeight: '24px', letterSpacing: '-0.03em' }],
-      sm: ['16px', { lineHeight: '28px', letterSpacing: '-0.03em' }],
-      lg: ['18px', { lineHeight: '28px', letterSpacing: '-0.03em' }],
-      xl: ['24px', { lineHeight: '36px', letterSpacing: '-0.03em' }],
-      '2xl': ['36px', { lineHeight: '48px', letterSpacing: '-0.032em' }],
-      '3xl': ['48px', { lineHeight: '56px', letterSpacing: '-0.032em' }],
-      '4xl': ['56px', { lineHeight: '64px', letterSpacing: '-0.032em' }],
-      '5xl': ['80px', { lineHeight: '80px', letterSpacing: '-0.032em' }],
-    },
-    boxShadow: {
-      sm: '0px 2px 4px 0px rgba(11,10, 55, 0.15)',
-      lg: '0px 8px 20px 0px rgba(18, 16, 99, 0.06)',
-
-    },
-    extend: {
+      xs: ['14px', { lineHeight: '24px', letterSpacing: '0.03em' }],
+      sm: ['16px', { lineHeight: '28px', letterSpacing: '0.03em' }],
+      lg: ['18px', { lineHeight: '28px', letterSpacing: '0.03em' }],
+      xl: ['24px', { lineHeight: '36px', letterSpacing: '0.03em' }],
+      '2xl': ['36px', { lineHeight: '48px', letterSpacing: '0.032em' }],
+      '3xl': ['48px', { lineHeight: '56px', letterSpacing: '0.032em' }],
+      '4xl': ['56px', { lineHeight: '64px', letterSpacing: '0.032em' }],
+      '5xl': ['80px', { lineHeight: '80px', letterSpacing: '0.032em' }],
     },
   },
   darkMode: "class",

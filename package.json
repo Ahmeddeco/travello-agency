@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@nextui-org/react": "^2.4.6",
+    "@react-aria/interactions": "^3.22.1",
     "framer-motion": "^11.3.9",
     "next": "14.2.5",
     "next-themes": "^0.3.0",

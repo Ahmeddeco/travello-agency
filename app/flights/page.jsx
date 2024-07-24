@@ -2,7 +2,9 @@ import React from 'react'
 
 const FlightsPage = () => {
 	return (
-		<section className='section text-7xl font-volkhov'>FlightsPage</section>
+		<section className='section flex-col gap-20'>
+			<h1 className='text-9xl text-center font-poppins '>Flights Page</h1>
+		</section>
 	)
 }
 

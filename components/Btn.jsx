@@ -1,9 +1,14 @@
+'use client'
+
 import { Button, ButtonGroup } from '@nextui-org/button'
-const Btn = ({ name }) => {
+const Btn = ({ name, colors, icon, variants, handelClick, size }) => {
 	return (
 		<Button
-			color='secondary'
-			className='text-foreground-100 '
+			color={colors}
+			variant={variants}
+			onPress={handelClick}
+			size={size}
+			startContent={icon}
 		>
 			{name}
 		</Button>
