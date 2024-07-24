@@ -8,10 +8,7 @@ const NavBar = () => {
 		<header className='flex items-center justify-between p-6 fixed top-0 left-0 right-0 container'>
 			{/* ------------------------------- Logo ------------------------------ */}
 			<Link href='/'>
-				<Image
-					src={Logo}
-					alt='logo'
-				/>
+				<h1 className='text-foreground font-poppins font-black text-2xl'>Travell <span className='text-primary font-poppins font-black text-2xl'>O</span></h1>
 			</Link>
 			{/* ------------------------------- Nav ------------------------------- */}
 			<nav>
@@ -24,9 +21,7 @@ const NavBar = () => {
 				</ul>
 			</nav>
 			{/* ------------------------------- Btn ------------------------------- */}
-			<div className=''>
-BTN
-			</div>
+			<div className=''>BTN</div>
 		</header>
 	)
 }

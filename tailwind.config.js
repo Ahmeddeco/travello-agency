@@ -1,4 +1,4 @@
-import {nextui} from "@nextui-org/react";
+import { nextui } from "@nextui-org/react"
 
 
 /** @type {import('tailwindcss').Config} */
@@ -8,24 +8,69 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}"
- ],
+  ],
   theme: {
     container: {
       center: true,
     },
+    screens: {
+      tab: '960px',
+      desk: '1280px',
+    },
+    // colors: {
+    //   orangy: "#DF6951",
+    //   yellowy: "#f2994a",
+    //   blueblack: "#181E4B",
+    //   default: '#5E6282',
+
+    // },
+    fontFamily: {
+      poppins: "var(--font-poppins)",
+      volkhov: "var(--font-volkhov)",
+    },
+    fontSize: {
+      xs: ['14px', { lineHeight: '24px', letterSpacing: '-0.03em' }],
+      sm: ['16px', { lineHeight: '28px', letterSpacing: '-0.03em' }],
+      lg: ['18px', { lineHeight: '28px', letterSpacing: '-0.03em' }],
+      xl: ['24px', { lineHeight: '36px', letterSpacing: '-0.03em' }],
+      '2xl': ['36px', { lineHeight: '48px', letterSpacing: '-0.032em' }],
+      '3xl': ['48px', { lineHeight: '56px', letterSpacing: '-0.032em' }],
+      '4xl': ['56px', { lineHeight: '64px', letterSpacing: '-0.032em' }],
+      '5xl': ['80px', { lineHeight: '80px', letterSpacing: '-0.032em' }],
+    },
+    boxShadow: {
+      sm: '0px 2px 4px 0px rgba(11,10, 55, 0.15)',
+      lg: '0px 8px 20px 0px rgba(18, 16, 99, 0.06)',
+
+    },
     extend: {
-      colors: {
-        orangy: "#DF6951",
-        yellowy: "#f2994a",
-        blueblack: "#181E4B",
-        greyy: "#5E6282",
-      },
-      fontFamily: {
-        poppins: "var(--font-poppins)",
-        volkhov: "var(--font-volkhov)",
-      },
     },
   },
   darkMode: "class",
-  plugins: [nextui()]
+  plugins: [nextui(
+    {
+      themes: {
+        light: {
+          colors: {
+            primary: '#DF6951',
+            secondary: '#f2994a',
+            // default: '#5E6282',
+            background: '#F8F5F4',
+            foreground: '#0F0E0E'
+
+          },
+        },
+        dark: {
+          colors: {
+            primary: '#DF6951',
+            secondary: '#f2994a',
+            // default: '#5E6282',
+            background: '#0F0E0E',
+            foreground: '#F8F5F4'
+
+          },
+        },
+      }
+    }
+  )]
 }

@@ -1,7 +1,13 @@
-import {Button, ButtonGroup} from "@nextui-org/button";
-const Btn = ({name}) => {
+import { Button, ButtonGroup } from '@nextui-org/button'
+const Btn = ({ name }) => {
 	return (
-<Button color='orangy'>{name}</Button>	)
+		<Button
+			color='secondary'
+			className='text-foreground-100 '
+		>
+			{name}
+		</Button>
+	)
 }
 
 export default Btn
