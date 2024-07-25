@@ -10,8 +10,11 @@ import card3Image from '@/public/icons/caregory/LocalEvents.png'
 import card4Image from '@/public/icons/caregory/Customization.png'
 import orangrectangle from '@/public/icons/caregory/orangrectangle.webp'
 import dots from '@/public/icons/dots.webp'
-import Navigation from '@/public/icons/Navigation.webp'
-import zigzagIcon from '@/public/icons/zigzag.webp'
+import Navigation from '@/public/icons/Navigation.png'
+import zigzagIcon from '@/public/icons/zigzag.png'
+import RomePic from '@/public/images/Rome.png'
+import LondonPic from '@/public/images/London.png'
+import EuropPic from '@/public/images/Europe.png'
 
 
 export const navLinks = [
@@ -83,21 +86,24 @@ export const destinations = {
   h2: 'Top Destinations',
   desCards: [
     {
+      pic: RomePic,
       city: 'Rome, Italty',
       price: '$5,42k',
       location: '10 Days Trip'
     },
     {
+      pic: LondonPic,
       city: 'London, UK',
       price: '$4.2k',
       location: '12 Days Trip'
     },
     {
+      pic: EuropPic,
       city: 'Full Europe',
       price: '$15k',
       location: '28 Days Trip'
     },
   ],
-  cardIcon: Navigation,
+  Navigation: Navigation,
   zigzagIcon: zigzagIcon
 }
