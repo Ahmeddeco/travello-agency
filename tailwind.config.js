@@ -50,7 +50,7 @@ module.exports = {
             secondary: '#f2994a',
             // default: '#5E6282',
             background: '#F6ECE8',
-            foreground: '#131313'
+            foreground: '#1E1B1B'
 
           },
         },
@@ -59,7 +59,7 @@ module.exports = {
             primary: '#DF6951',
             secondary: '#f2994a',
             // default: '#5E6282',
-            background: '#131313',
+            background: '#1E1B1B',
             foreground: '#F6ECE8'
 
           },
