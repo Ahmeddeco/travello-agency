@@ -5,6 +5,7 @@ const Homepage = () => {
 	return (
 		<main className=''>
 			<HeroSection />
+			
 		</main>
 	)
 }
