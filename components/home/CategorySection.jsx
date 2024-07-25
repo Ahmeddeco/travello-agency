@@ -21,7 +21,7 @@ const CategorySection = () => {
 				{/* title */}
 				<div className='flex flex-col items-center justify-center gap-4'>
 					<p className='p uppercase '>{category.h4}</p>
-					<h2 className='h2 text-center'>{category.h2}</h2>
+					<h2 className='h2 text-center font-volkhov'>{category.h2}</h2>
 				</div>
 				{/* cards */}
 				<Cards />
