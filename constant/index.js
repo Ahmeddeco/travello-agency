@@ -1,18 +1,20 @@
 import playIcon from '@/public/icons/play.png'
 import heroFull from '@/public/images/hero-image.webp'
 import TriangleIcon from './TriangleIcon'
+import underline from '@/public/icons/underline.webp'
 
 export const navLinks = [
+  { name: 'Home', href: '/' },
   { name: 'Destinations', href: '/destinations' },
   { name: 'Hotels', href: '/hotels' },
   { name: 'Flights', href: '/flights' },
   { name: 'Bookings', href: '/bookings' },
-  { name: 'login', href: '/login' },
 ]
 
 export const hero = {
   'h4': 'Best Destinations around the world',
   'h1': 'Travel, enjoy and live a new and full life',
+  'underlineIcon': underline,
   'p': 'Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the.',
   image: heroFull,
   btn1: {
@@ -20,7 +22,7 @@ export const hero = {
     href: '/destinations',
     color: 'secondary',
     icon: null,
-    size:'lg',
+    size: 'lg',
   },
   btn2: {
     title: 'Play Demo',
@@ -28,6 +30,6 @@ export const hero = {
     color: 'light',
     icon: <TriangleIcon />
     ,
-    size:'lg',
+    size: 'lg',
   },
 }

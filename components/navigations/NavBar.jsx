@@ -1,18 +1,15 @@
 'use client'
 
-import React from 'react'
 import Btn from '../Btn'
 import NavLinks from './NavLinks'
-import { hero } from '@/constant'
 import LogoiIcon from './LogoiIcon'
 import ThemeSwitcher from '../theme/ThemeSwitcher'
 
 const NavBar = () => {
-	const handelClick = () => {
-		console.log('hello')
-	}
+	const handelClick = () => {}
+
 	return (
-		<header className='flex items-center justify-between py-6 fixed top-0 left-0 right-0 container z-50'>
+		<header className='flex items-center justify-between py-6 fixed top-0 left-0 right-0 container z-50 '>
 			{/* ------------------------------- Logo ------------------------------ */}
 			<LogoiIcon />
 			{/* ------------------------------- Nav ------------------------------- */}
@@ -23,9 +20,8 @@ const NavBar = () => {
 				<ThemeSwitcher />
 
 				<Btn
-					name='Sign up'
+					title='Sign up'
 					colors='primary'
-					icon={null}
 					variants='bordered'
 					size='md'
 					handelClick={handelClick}

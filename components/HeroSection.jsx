@@ -10,7 +10,14 @@ const HeroSection = () => {
 
 			<div className='flex flex-col justify-between items-start w-5/12 gap-10'>
 				<h4 className='h4 text-primary'>{hero.h4}</h4>
-				<h1 className='h1'>{hero.h1}</h1>
+				<h1 className='h1 relative'>
+					{hero.h1}
+					<Image
+						src={hero.underlineIcon}
+						alt='underline icon'
+						className='absolute top-16 -right-28 -z-50'
+					/>
+				</h1>
 				<p className='p'>{hero.p}</p>
 
 				{/* btn */}

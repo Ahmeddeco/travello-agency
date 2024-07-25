@@ -49,8 +49,8 @@ module.exports = {
             primary: '#DF6951',
             secondary: '#f2994a',
             // default: '#5E6282',
-            background: '#F8F5F4',
-            foreground: '#0F0E0E'
+            background: '#F6ECE8',
+            foreground: '#131313'
 
           },
         },
@@ -59,8 +59,8 @@ module.exports = {
             primary: '#DF6951',
             secondary: '#f2994a',
             // default: '#5E6282',
-            background: '#0F0E0E',
-            foreground: '#F8F5F4'
+            background: '#131313',
+            foreground: '#F6ECE8'
 
           },
         },
