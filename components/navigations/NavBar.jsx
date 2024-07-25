@@ -1,11 +1,11 @@
 'use client'
 
 import React from 'react'
-import LogoiIcon from './LogoiIcon'
-import Btn from './Btn'
-import ThemeSwitcher from './theme/ThemeSwitcher'
+import Btn from '../Btn'
 import NavLinks from './NavLinks'
 import { hero } from '@/constant'
+import LogoiIcon from './LogoiIcon'
+import ThemeSwitcher from '../theme/ThemeSwitcher'
 
 const NavBar = () => {
 	const handelClick = () => {

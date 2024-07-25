@@ -1,5 +1,6 @@
 import playIcon from '@/public/icons/play.png'
 import heroFull from '@/public/images/hero-image.webp'
+import TriangleIcon from './TriangleIcon'
 
 export const navLinks = [
   { name: 'Destinations', href: '/destinations' },
@@ -17,13 +18,16 @@ export const hero = {
   btn1: {
     title: 'Find out more',
     href: '/destinations',
-    color: 'primary',
-    icon: null
+    color: 'secondary',
+    icon: null,
+    size:'lg',
   },
   btn2: {
     title: 'Play Demo',
     href: '/',
-    color: 'secondary',
-    icon: playIcon
+    color: 'light',
+    icon: <TriangleIcon />
+    ,
+    size:'lg',
   },
 }

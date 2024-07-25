@@ -1,7 +1,7 @@
 import { Poppins, Volkhov } from 'next/font/google'
 import './globals.css'
-import NavBar from '@/components/NavBar'
-import Footer from '@/components/Footer'
+import NavBar from '@/components/navigations/NavBar'
+import Footer from '@/components/navigations/Footer'
 import { Providers } from './providers'
 
 const poppins = Poppins({
@@ -27,9 +27,9 @@ export default function RootLayout({ children }) {
 		<html lang='en'>
 			<body className={`${poppins.variable} ${volkhov.variable}`}>
 				<Providers>
-						<NavBar />
-						{children}
-						<Footer />
+					<NavBar />
+					{children}
+					<Footer />
 				</Providers>
 			</body>
 		</html>
