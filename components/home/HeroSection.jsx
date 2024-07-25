@@ -7,8 +7,8 @@ const HeroSection = () => {
 			{/* Text */}
 
 			<div className='flex flex-col justify-between items-start w-5/12 gap-10'>
-				<h4 className='h4 text-primary'>{hero.h4}</h4>
-				<h1 className='h1 relative'>
+				<p className='h6 text-primary'>{hero.h6}</p>
+				<h1 className='h1 font-volkhov relative'>
 					{hero.h1}
 					<Image
 						src={hero.underlineIcon}

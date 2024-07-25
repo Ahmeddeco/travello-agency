@@ -1,7 +1,15 @@
-import playIcon from '@/public/icons/play.png'
-import heroFull from '@/public/images/hero-image.webp'
+// components
 import TriangleIcon from './TriangleIcon'
+
+// images
+import heroFull from '@/public/images/hero-image.webp'
 import underline from '@/public/icons/underline.webp'
+import card1Image from '@/public/icons/caregory/CalculatedWeather.webp'
+import card2Image from '@/public/icons/caregory/BestFlights.png'
+import card3Image from '@/public/icons/caregory/LocalEvents.webp'
+import card4Image from '@/public/icons/caregory/Customization.webp'
+import orangrectangle from '@/public/icons/caregory/orangrectangle.webp'
+
 
 export const navLinks = [
   { name: 'Home', href: '/' },
@@ -12,7 +20,7 @@ export const navLinks = [
 ]
 
 export const hero = {
-  'h4': 'Best Destinations around the world',
+  'h6': 'Best Destinations around the world',
   'h1': 'Travel, enjoy and live a new and full life',
   'underlineIcon': underline,
   'p': 'Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the.',
@@ -32,4 +40,76 @@ export const hero = {
     ,
     size: 'lg',
   },
+}
+
+// export const category = {
+//   'h4': 'Category',
+//   'h2': 'We Offer Best Services',
+//   cards: [
+//     {
+//       card1: {
+//         img: card1Image,
+//         title: 'Calculated Weather ',
+//         p: 'Built Wicket longer admire do barton vanity itself do in it.',
+//       },
+//     },
+//     {
+//       card2: {
+//         img: card2Image,
+//         title: 'Best Flights',
+//         p: 'Engrossed listening. Park gate sell they west hard for the.',
+//       },
+//     },
+//     {
+//       card3: {
+//         img: card3Image,
+//         title: 'Local Events',
+//         p: 'Barton vanity itself do in it. Preferd to men it engrossed listening. ',
+//       },
+//     },
+//     {
+//       card4: {
+//         img: card4Image,
+//         title: 'Customization ',
+//         p: 'We deliver outsourced aviation services for military customers',
+//       },
+//     },
+
+//   ],
+//   orangrectangle: orangrectangle
+// }
+
+
+
+
+export const category = {
+  'h4': 'Category',
+  'h2': 'We Offer Best Services',
+  cards: [
+    {
+      img: card1Image,
+      title: 'Calculated Weather ',
+      p: 'Built Wicket longer admire do barton vanity itself do in it.',
+
+    },
+    {
+      img: card2Image,
+      title: 'Best Flights',
+      p: 'Engrossed listening. Park gate sell they west hard for the.',
+    },
+
+    {
+      img: card3Image,
+      title: 'Local Events',
+      p: 'Barton vanity itself do in it. Preferd to men it engrossed listening. ',
+    },
+
+    {
+      img: card4Image,
+      title: 'Customization ',
+      p: 'We deliver outsourced aviation services for military customers',
+    },
+
+  ],
+  orangrectangle: orangrectangle
 }

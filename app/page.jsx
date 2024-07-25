@@ -4,7 +4,7 @@ import React from 'react'
 
 const Homepage = () => {
 	return (
-		<main className=''>
+		<main className='font-poppins'>
 			<HeroSection />
 			<CategorySection/>
 		</main>
