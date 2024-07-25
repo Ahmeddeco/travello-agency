@@ -1,8 +1,6 @@
 import { hero } from '@/constant'
 import Image from 'next/image'
-import React from 'react'
-import Btn from './Btn'
-
+import Btn from '../Btn'
 const HeroSection = () => {
 	return (
 		<section className='section'>

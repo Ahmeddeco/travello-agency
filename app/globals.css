@@ -7,7 +7,7 @@
 }
 
 .section {
-	@apply min-h-[calc(100dvh-96px)] mt-[96px] flex items-center justify-center flex-col tab:flex-row container;
+	@apply min-h-[calc(100dvh-80px)] mt-[96px] flex items-center justify-center flex-col tab:flex-row container;
 }
 .h1 {
 	@apply font-volkhov text-5xl text-foreground font-black text-pretty;

@@ -9,7 +9,7 @@ const NavBar = () => {
 	const handelClick = () => {}
 
 	return (
-		<header className='flex items-center justify-between py-6 fixed top-0 left-0 right-0 container z-50 '>
+		<header className='flex items-center justify-between py-4 fixed top-0 left-0 right-0 container z-50 bg-background/90'>
 			{/* ------------------------------- Logo ------------------------------ */}
 			<LogoiIcon />
 			{/* ------------------------------- Nav ------------------------------- */}
@@ -30,5 +30,4 @@ const NavBar = () => {
 		</header>
 	)
 }
-
 export default NavBar
