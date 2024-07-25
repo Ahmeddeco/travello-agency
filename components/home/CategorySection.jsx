@@ -1,7 +1,7 @@
 import { category } from '@/constant'
 import React from 'react'
-import Cards from './cards'
 import Image from 'next/image'
+import Cards from './Cards'
 
 const CategorySection = () => {
 	return (
