@@ -25,6 +25,7 @@ const HeroSection = () => {
 						colors={hero.btn1.color}
 						title={hero.btn1.title}
 						size={hero.btn1.size}
+						variants={hero.btn1.variants}
 					/>
 					<Btn
 						colors={hero.btn2.color}
@@ -32,6 +33,7 @@ const HeroSection = () => {
 						icon={hero.btn2.icon}
 						startContent={hero.btn2.icon}
 						size={hero.btn2.size}
+						variants={hero.btn2.variants}
 					/>
 				</div>
 			</div>

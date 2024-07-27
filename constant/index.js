@@ -43,16 +43,17 @@ export const hero = {
   btn1: {
     title: 'Find out more',
     href: '/destinations',
-    color: 'secondary',
+    color: 'warning',
+    variants: 'shadow',
     icon: null,
     size: 'lg',
   },
   btn2: {
     title: 'Play Demo',
     href: '/',
-    color: 'light',
-    icon: <TriangleIcon />
-    ,
+    color: 'dark',
+    variants: 'light',
+    icon: <TriangleIcon />,
     size: 'lg',
   },
 }
