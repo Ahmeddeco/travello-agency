@@ -4,10 +4,10 @@ import React from 'react'
 
 const DestinationCard = () => {
 	return (
-		<div className='flex  gap-8 items-center justify-between'>
+		<div className='flex  gap-8 items-center justify-center'>
 			{destinations.desCards.map(({ city, location, price, pic }) => (
 				<div
-					className='flex flex-col gap-8'
+					className='flex flex-col gap-8 bg-white rounded-3xl pb-6'
 					key={city}
 				>
 					<Image

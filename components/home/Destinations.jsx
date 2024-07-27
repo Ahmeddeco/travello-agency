@@ -6,9 +6,10 @@ import Image from 'next/image'
 const Destinations = () => {
 	return (
 		<section className='section relative'>
-			<div className='flex flex-col gap-8 items-center justify-center'>
+			<div className='flex flex-col gap-8 items-center justify-center w-full h-full'>
 				<h6 className='h6'>{destinations.h6}</h6>
 				<h2 className='h2 font-volkhov'>{destinations.h2}</h2>
+
 				<DestinationCard />
 				<Image
 					src={destinations.zigzagIcon}

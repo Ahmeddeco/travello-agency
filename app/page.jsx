@@ -1,3 +1,4 @@
+import Booking from '@/components/home/Booking'
 import CategorySection from '@/components/home/CategorySection'
 import Destinations from '@/components/home/Destinations'
 import HeroSection from '@/components/home/HeroSection'
@@ -7,8 +8,9 @@ const Homepage = () => {
 	return (
 		<main className='font-poppins'>
 			<HeroSection />
-			<CategorySection/>
-			<Destinations/>
+			<CategorySection />
+			<Destinations />
+			<Booking />
 		</main>
 	)
 }

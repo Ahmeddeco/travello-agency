@@ -2,12 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-.mainSection {
-	@apply min-h-screen  flex items-center justify-center flex-col tab:flex-row  px-[20px];
-}
-
 .section {
-	@apply min-h-[calc(100dvh-80px)] mt-[96px] h-auto flex items-center justify-center flex-col tab:flex-row container;
+	@apply min-h-[calc(100dvh-80px)] w-full mt-[96px] h-auto flex items-center justify-between flex-col tab:flex-row container;
 }
 .h1 {
 	@apply text-5xl text-foreground font-black text-pretty;
@@ -28,5 +24,5 @@
 	@apply font-poppins font-semibold text-xl text-pretty;
 }
 .p {
-	@apply font-poppins text-default-600 text-lg text-pretty font-medium;
+	@apply font-poppins text-default-500 text-lg text-pretty font-medium;
 }

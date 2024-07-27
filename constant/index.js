@@ -15,6 +15,15 @@ import zigzagIcon from '@/public/icons/zigzag.png'
 import RomePic from '@/public/images/Rome.png'
 import LondonPic from '@/public/images/London.png'
 import EuropPic from '@/public/images/Europe.png'
+import NextTripImage from '@/public/images/NextTripImage.webp'
+import Destination from '@/public/icons/nextTrip/Destination.webp'
+import Payment from '@/public/icons/nextTrip/Payment.webp'
+import Airport from '@/public/icons/nextTrip/Airport.webp'
+import LEAF from '@/public/icons/nextTrip/LEAF.webp'
+import map from '@/public/icons/nextTrip/map.webp'
+import send from '@/public/icons/nextTrip/send.webp'
+import bulding from '@/public/icons/nextTrip/bulding.webp'
+import heart from '@/public/icons/nextTrip/heart.webp'
 
 
 export const navLinks = [
@@ -106,4 +115,42 @@ export const destinations = {
   ],
   Navigation: Navigation,
   zigzagIcon: zigzagIcon
+}
+
+export const bookings = {
+  h6: 'Easy and Fast',
+  h2: 'Book your next trip in 3 easy steps',
+  ul: [
+    {
+      h6: 'Choose Destination',
+      p: 'Lorem ipsum dolor sit amet, consectetu radipiscing elit. Urna, tortor tempus.',
+      icon: Destination
+    },
+    {
+      h6: 'Make Payment',
+      p: 'Lorem ipsum dolor sit amet, consectetu radipiscing elit. Urna, tortor tempus.',
+      icon: Payment
+    },
+    {
+      h6: 'Reach Airport on Selected Date',
+      p: 'Lorem ipsum dolor sit amet, consectetu radipiscing elit. Urna, tortor tempus.',
+      icon: Airport
+    },
+  ],
+  SideImageCard: {
+    img: NextTripImage,
+    h6: 'Trip To Greece',
+    date: '14-29 June',
+    by: 'by Robbin joseph',
+    icons: [
+      { img: LEAF, id: 1 },
+      { img: map, id: 2 },
+      { img: send, id: 3 },
+    ],
+    buldingIcon: bulding,
+    buldingPara: '24 people going',
+    heartIcon: heart,
+    img: NextTripImage,
+
+  }
 }
